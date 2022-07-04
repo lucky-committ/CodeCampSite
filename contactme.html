@@ -12,6 +12,11 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-233554531-1');
+  
+  //check login status
+  let data = sessionStorage.getItem('login')
+    if (data==true){
+  gtag('set', {'user_id': '123MYID'}); // Set the user ID using signed-in user_id.}
 </script>
     
     
